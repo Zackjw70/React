@@ -1,4 +1,3 @@
-// Display a list of posts
 import Loading from "./Loading";
 import useFetch from "../hooks/useFetch";
 
