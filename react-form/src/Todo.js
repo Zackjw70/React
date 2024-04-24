@@ -20,7 +20,5 @@ const Todo = () => {
         
     )
 }
-//SMall change to assignment
-//adding extra comments to the assingment
 
 export default Todo
