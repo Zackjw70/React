@@ -4,6 +4,7 @@ import './App.css';
 import { Link } from "react-router-dom";
 
 
+
 function App() {
   const [columns, setColumns] = useState([])
   const [records, setRecords] = useState([])
@@ -22,6 +23,7 @@ function App() {
   }, [])
 
   return (
+    
     <div>
       <table>
         <tbody>
