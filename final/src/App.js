@@ -25,10 +25,6 @@ function App() {
         console.log(err)
       });
   }, [])
-
-
-  return ReactDOM.createPortal
-
   return (
     <div className="view-agents">
       <button className="button-82-pushable" role="button">
