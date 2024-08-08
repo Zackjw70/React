@@ -10,7 +10,7 @@ function Show(){
     const [itemNum, setItemNum] = useState(idNumNumber);
     const [record, setRecord] = useState([]);
 
-    let axiosVar = 'http://localhost:3030/products/' + itemNum;
+    
     useEffect(()=>{
         axios.get('http://localhost:3030/products/' + itemNum)
         .then(res=>{

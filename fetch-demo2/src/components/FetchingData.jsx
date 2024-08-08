@@ -1,5 +1,5 @@
 import Loading from "./Loading";
-import useFetch from "../hooks/useFetch";
+
 
 const FetchingData = () => {
     const { data, error, loading } = useFetch('posts');

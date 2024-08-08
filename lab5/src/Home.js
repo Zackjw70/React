@@ -5,6 +5,7 @@ import Open from './Open'
 import { useEffect } from 'react';
 import { ThemeContext, themes } from './context/themeContext';
 import ToggleSwitch from './ToggleSwitch';
+import './App.css';
 
 function Home() {
 
@@ -33,14 +34,14 @@ function Home() {
 
     return (
         <ThemeContext.Provider value={{theme: theme}}>
-            <div style={{backgroundColor: theme.background, color: theme.foreground}}>
+            <div style={{backgroundColor: theme.background, color: theme.foreground}} className="nav-bar">
                 <button onClick={() => handleShowMain()} style={{backgroundColor: theme.background, color: theme.foreground}}>
                     Home Page
                 </button>
                 <button onClick={() => handleShowProd()} style={{backgroundColor: theme.background, color: theme.foreground}}>
                     Products
                 </button>
-                <ToggleSwitch onToggle={toggleTheme} />
+                <ToggleSwitch onToggle={toggleTheme} className="toggleSwitch"/>
                 
                 {showMain ? <Open/> : <AppRouter/>}
             </div>

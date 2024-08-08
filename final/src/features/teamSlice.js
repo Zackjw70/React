@@ -22,10 +22,17 @@ const teamSlice = createSlice({
                 });
             }else{
                 const tempAgent = { ...action.payload, teamQuantity: 1 };
-                state.teamMembers.push(tempAgent);
+                if (state.teamMembers.length > 4){
+                    toast.error("Team is already full")
+                }
+                else{
+                    state.teamMembers.push(tempAgent);
                 toast.success("Added to Team!", {
                     position: "bottom-right",
+                    
                 });
+                }
+                
 
             }
 

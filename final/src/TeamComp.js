@@ -50,6 +50,9 @@ function TeamComp() {
   if (cont == 0) {
     error += "\nController is Missing."
   }
+  if (team.teamMembers.length < 5){
+    error += "\nTeam is not full."
+  }
   console.log(error)
   if (error == "") {
     error = "Team looks good!"
