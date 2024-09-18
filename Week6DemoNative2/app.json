@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Week2Lab",
-    "slug": "Week2Lab",
+    "name": "Week6DemoNative2",
+    "slug": "Week6DemoNative2",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,16 +22,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-barcode-scanner",
-        {
-          "cameraPermission": "Allow Scanner App to access camera."
-        }
-      ]
-    ]
-    
+    }
   }
 }
-
